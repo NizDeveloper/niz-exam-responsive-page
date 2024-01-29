@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*
+ * Estilos Generales
+ */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+  }
+
+
+  body::-webkit-scrollbar{
+    width: 7px;
+  }
+
+
+  body::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+  }
+
+
+  section[id]{
+    scroll-margin-top: 70px;
+  }
+
+
+  h1, h2, h3, h4, h5, h6, p, a, span, button{
+    word-break: break-word;
+  }
+
+
+  img, svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+
+  p {
+    color: var(--text-color);
+  }
+/* Fin Estilos de etiquetas */
+
+
+/*
+ * Varibales de colores
+ */
+  :root {
+    --orange: #d7570d;
+    --black: #222222;
+    --gray: #2b2b2b;
+    --text-color: #9b9b9b;
+    --color-hover: #484b4a;
+  }
+/* Varibales de colores */
+
+
+/*
+ * Estilos que se repiten
+ */
+  .section {
+    padding: 40px 20px 90px 20px;
+  }
+
+
+  .section>*+* {
+    margin-top: 40px;
+  }
+
+
+  /*
+   * Encabezado de secciones
+   */
+    .header_container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+
+    .header_container .title>*+*{
+      margin-top: 10px;
+    }
+
+
+    .header_container .title h2{
+      color: var(--orange);
+      font-size: 30px;
+    }
+
+    .icon_section{
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+    }
+
+
+    .icon_section svg{
+      fill: var(--text-color);
+    }
+  /*  Encabezado de secciones */
+
+
+  /*
+   * Botones
+   */
+    .primary_button {
+      color: #FFF;
+      display: inline-block;
+      background-color: var(--orange);
+      padding: 13px 26px;
+      transition: all 0.5s;
+    }
+
+
+    .primary_button:hover {
+      background-color: var(--gray);
+    }
+
+
+    /* Segundo Boton */
+    .secondary_button {
+      color: #FFF;
+      display: inline-block;
+      padding: 13px 26px;
+      transition: all 0.5s;
+    }
+
+
+    .secondary_button:hover {
+      background-color: var(--orange);
+    }
+    /* Segundo Boton */
+  /* Botones */
+/* Estilos que se repiten */

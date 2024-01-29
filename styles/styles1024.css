@@ -1,0 +1,221 @@
+@media screen and (min-width: 1024px) {
+  /* 
+    Estilos generales 
+    */
+    .section {
+      padding: 40px 30px 90px 30px;
+    }   
+
+    .header_container .title {
+      align-items: center;
+      width: 60%;
+    }  
+  /* Estilos generales */
+
+
+  .nav_dektop {
+    display: none;
+  }
+  
+
+  .hero .content_hero .hero_text {
+    width: 60%;
+  }
+
+
+  .hero .content_hero .hero_text h1 {
+    font-size: 50px;
+  }  
+
+
+  .hero .content_hero .hero_text h2 {
+    font-size: 30px;
+  }
+
+
+  .header_container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .about .about_columns {
+    display: flex;
+    gap: 30px;
+  }
+
+
+  .about .about_columns .about_col2 , .about .about_columns .about_col1 {
+    width: 50%;
+  }
+
+
+  /* 
+    Imagenes apiladas 
+    */
+    .about .about_columns .about_col2 .images{
+      max-height: 500px;
+      min-width: 450px;
+    }
+
+
+    .about .about_columns .about_col2 .images .img1{
+      min-width: 355px;
+      min-height: 430px;
+      top: 0;
+      right: 0;
+    }
+
+    
+    .about .about_columns .about_col2 .images .img2{
+      min-width: 290px;
+      min-height: 260px;
+      top: 160px;
+      left: 120px;
+    }
+
+
+    .about .about_columns .about_col2 .images .img3{
+      min-width: 370px;
+      min-height: 220px;
+      bottom: 0;
+      left: 0;
+    }
+
+
+    .about .about_columns .about_col2 .images .borders{
+      min-width: 300px;
+      min-height: 390px;
+      right: 140px;
+      top: 40px;
+    }    
+  /* Imagenes apiladas */
+
+  .projects .container .background .content{
+    width: 1440px;
+  }
+
+  
+  .projects .background .content .columns{    
+    flex-direction: row;
+  }
+
+
+  /* 
+   * imagenes apiladas de otra section 
+   */
+    .projects .background .columns .gallery{
+      width: 200px;
+      height: 270px;
+    }
+
+
+    .projects .background .columns .gallery .img1{
+      width: 150px;
+      height: 100px;
+    }
+
+
+    .projects .background .columns .gallery .img2{
+      width: 130px;
+      height: 100px;
+    }
+
+
+    .projects .background .columns .gallery .img3{
+      width: 170px;
+      height: 150px;
+    }
+
+
+    .projects .background .columns .gallery .borders{
+      width: 130px;
+      height: 204px;
+    }
+  /* imagenes apiladas de otra section */
+
+
+  .portfolio .container .controls>*+*{
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  
+  .portfolio .container .gallery .card{
+    min-width: 450px;
+    min-height: 290px;
+  }
+
+  /*
+   * Carousel Review
+   */
+    .review .container .slider_view .slider{
+      width: 450%;
+      gap: 50px;
+    }
+
+
+    .review .container .slider_view .slider .card{
+      width: 50%;
+    }
+  /*Carousel Review*/
+
+  /* 
+   * Cards Icons 
+   */
+    .carousel_icons .contain .backgrond .content .slider_view_icons .slider_icons{
+      width: 250%;
+    }
+
+    .carousel_icons .contain .backgrond .content .slider_view_icons .slider_icons .card_slider{
+      width: 25%;
+    }
+  /* Cards Icons */
+
+
+  .blogs .container .cards_container .card_blog{
+    width: 31%;
+  }
+
+
+  .blogs .container .cards_container .card_blog .image{
+    width: 100%;
+    min-height: 220px;
+    max-height: 220px;
+  }
+
+
+  .blogs .container .cards_container .card_blog .image img{
+    transform: translateY(0px);
+    min-height: 220px;
+    max-height: 220px;
+  }
+
+
+  /* 
+   * Footer Section 
+   */
+    .footer .contain .background .content{
+      gap: 21px;
+      flex-wrap: nowrap;
+    }
+
+
+    .footer .contain .background .content .block{
+      width: 32.33%;
+    }
+
+
+    .footer .contain .background .content .block2{
+      width: 32%;
+    }
+
+    .footer .copyright .container .content .rows .row2{
+      display: block;
+    }
+  /* Footer Section */
+
+  .row2 {
+    display: block;
+  }
+}

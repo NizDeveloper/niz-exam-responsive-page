@@ -1,0 +1,272 @@
+@media screen and (min-width: 1440px) {
+  /* 
+   * Estilos generales 
+   */
+    .section {
+      padding: 40px 20px 90px 20px;
+    }
+
+
+    .header_container .title {
+      width: 40%;
+    }  
+  /* Estilos generales */
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+
+  .header .container {
+    width: 1440px;
+    padding: 20px 40px;
+  }
+
+
+  .header .container .logo h1 {
+    font-size: 30px;
+  }
+
+
+  .header .container .logo .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .hero .content_hero {
+    height: 100vh;
+  }
+
+  
+  .hero .content_hero .image_hero img {
+    transform: translateY(-20%);
+  }
+
+
+  .hero .content_hero .hero_text {
+    width: 50%;
+  }
+
+
+  .hero .content_hero .hero_text h1 {
+    font-size: 45px;
+  }
+
+
+  .hero .content_hero .hero_text h2 {
+    font-size: 25px;
+  }
+
+
+  .hero .content_hero .hero_text .buttons_hero {
+    justify-content: center;
+    gap: 40px;
+  }
+
+
+  .button_nav_open {
+    display: none;
+  }
+
+
+  .nav_dektop {
+    display: block;
+  }
+
+
+  .nav375 {
+    display: none;
+  }
+
+
+  .opacity_nav {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+
+  .about {
+    background: linear-gradient(120deg, rgba(34, 34, 34, 1) 61%, rgba(42, 42, 42, 1) 61%);
+  }
+
+
+  /* 
+   * Imagenes apiladas 
+   */
+    .about .about_columns .about_col2 .images {
+      min-height: 640px;
+      min-width: 600px;
+    }
+
+
+    .about .about_columns .about_col2 .images .img1 {
+      min-width: 455px;
+      min-height: 530px;
+      top: 0;
+      right: 0;
+    }
+
+
+    .about .about_columns .about_col2 .images .img2 {
+      min-width: 390px;
+      min-height: 360px;
+      top: 180px;
+      left: 180px;
+    }
+
+
+    .about .about_columns .about_col2 .images .img3 {
+      min-width: 470px;
+      min-height: 320px;
+      bottom: 0;
+      left: 0;
+    }
+
+
+    .about .about_columns .about_col2 .images .borders {
+      min-width: 375px;
+      min-height: 470px;
+      right: 160px;
+      top: 40px;
+    }  
+  /* Imagenes apiladas */
+
+
+  .team .container .cards_container .card_team{
+    width: 23%;
+  }
+
+
+  /*
+   * Carousel Review
+   */
+    .review .container .slider_view .slider{
+      width: 300%;
+      gap: 50px;
+    }
+
+
+    .review .container .slider_view .slider .card{
+      width: 33.33%;
+    }
+  /*Carousel Review*/
+}
+
+/* 
+ * Nav Desktop 
+ */
+  .header .nav_dektop {
+    position: relative;
+  }
+
+
+  .header .nav_dektop .nav_links {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .header .nav_dektop .nav_links li a{
+    padding: 16px;
+    position: relative;
+  }
+
+
+  .header .nav_dektop .nav_links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--orange);
+    transition: all 0.5s;
+  }
+
+
+  .header .nav_dektop .nav_links a:hover::after {
+    width: 100%;
+  }
+
+
+  .header .nav_dektop .nav_links li {
+    position: relative;
+  }
+
+  
+  .header .nav_dektop .nav_links li a {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop_active {
+    position: relative;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop_active .expand_icon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop_active .expand_icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop:hover .drop{
+    display: block;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop a:hover + .drop{
+    display: block;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop {
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    width: 200px;
+    background-color: var(--orange);
+    overflow: hidden;
+    transition: all 0.4s;
+    display: none;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop li a {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 16px;
+    transition: all 0.4s;
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop li a:hover{
+    background-color: var(--black);
+  }
+
+
+  .header .nav_dektop .nav_links .drop_nav_desktop .drop li a:hover {
+    background-color: var(--gray);
+    transition: all 0.4s;
+  }
+/*== Nav Desktop ==*/
